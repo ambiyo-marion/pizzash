@@ -63,3 +63,19 @@ body{
       font-weight: normal;
       margin: 40px auto;
     }
+    .opt form , input[type="button"]{
+        background-color: black;
+        color:white;
+        padding:10px;
+        margin:-14px auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+      }
+      
+      form, input[type="button"]:hover{background-color: green;}
+      .img{
+        background-image: url(../img/shallow-focus-photography-of-several-pizzas-1566837.jpg);
+        background-size: cover;
+      }
+      
