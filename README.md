@@ -19,3 +19,4 @@ This application was created using HTML, CSS, javascript, bootstrap and jquery.
 If you run into any issues or have questions, ideas or concerns contact ambiyomarion@gmail.com
 ### License
 *MIT*
+[LICENSE MIT](./LICENSE)
