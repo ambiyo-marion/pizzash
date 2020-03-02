@@ -4,6 +4,7 @@
 ## Description
 Pizzash is pizza delivery app where one can order pizza choose the toppings,crust and size.Also they can choose the delivery method they want.
 ## Live demo
+ https://ambiyo-marion.github.io/pizzash/
 
 ## Setup Requirements
 * Open Terminal {Ctrl+Alt+T}
