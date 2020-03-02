@@ -13,59 +13,111 @@
     <ul class="nav justify-content-center bg-aqua color-text-secondary mr-5">
         <li class="nav-item">
             <a class="nav-link bg-info text-white" href="index.html">Home</a>
-        </li> 
+        </li>
+
+        
     </ul>
-    <div class="about" id="about">
-        <div class="input-data" id="input-data">
-            <div class="text">
-                    <h1>Order Now</h1>
-                    <h4>Pizza Size:</h4>
-                    <select required  id="size">
-                        <option value="3">Small - 3000 RWF</option>
-                        <option value="4">Medium - 5000 RWF</option>
-                        <option value="5">Large - 7,000 RWF</option>
+    <br>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="page-header">
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    
+                    <br>
+                    <h3 class="one">Pizza</h3>
+                    <select class="form-control size">
+                        
+                        <option label="Small" value="550">Small</option>
+                        <option label="Medium" value="750">Medium</option>
+                        <option label="Large" value="1200">Large</option>
                     </select>
-                    <h4>Crust Type:</h4>
-                    <select required class="form-control" id="crust">
-                        <option value="1" name="small">Crispy - 500 RWF</option>
-                        <option value="2" name="medium">Stuffed - 1000 RWF</option>
-                        <option value="3" name="large">Gluten-free - 1500 RWF</option>
-                    </select>     
-                    <h4>Toppings:</h4>
-                        <input value="Cheese" name="topping" type="checkbox">Cheese - 500 RWF<br>
-                        <input value="Pepperoni" name="topping" type="checkbox">Pepperoni - 500 RWF<br>
-                        <input value="Chicken" name="topping" type="checkbox">Chicken - 500 RWF<br>
-                        <input value="Sausage" name="topping" type="checkbox">Sausage - 500 RWF
-                        <h4>How many Pizza(s):</h4>
-                        <input placeholder="Pizza(s)" type="number">
-                        <h4>Delivered:</h4>
-                        <input name="deliv" type="radio">Yes 
-                        <input name="deliv" type="radio">No
-                        <h4>Your location:</h4>
-                        <input placeholder="Place to be delivered to" type="text">
-                        <input type="submit" value="Checkout" id="submit">
                 </div>
+                <div class="col-md-4 col-sm-12">
+                        <br>
+                        <h3 class="two">Crust</h3>
+                        <select class="form-control crust">
+                            <option label="Crispy" value="150">Crispy</option>
+                            <option label="Stuffed" value="250">Stuffed</option>
+                            <option label="Gluten-free" value="350">Gluten-free</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                            <br>
+                            <h3 class="three">Toppings</h3>
+                            <select class="form-control toppings">
+                                <option label="Pepperoni" value="150">Pepperoni</option>
+                                <option label="Onions" value="250">Onions</option>
+                                <option label="Mushrooms" value="350">Mushrooms</option>
+                            </select>
+                        </div>
             </div>
-            <div class="output-data" id="output output-data">
-                <div class="text">
-                    <h1>Your Information</h1>
-                    <p><b>Pizza Size: </b><span id="first"></span></p>
-                    <p><b>Crust Type: </b><span id="last"></span></p>
-                    <p><b>Toppings: </b><span id="output-century">...</span></p>
-                    <p><b>How many Pizza(s): </b><span id="fm">...</span></p>
-                    <p><b>Delivered: </b><span id="idnbr">...</span></p>
-                    <p><b>Your location: </b><span id="given-name">....</span></p>
-                </div>
-            </div>
-            <div class="empty-output" id="empty-output">
-                <div class="text">
-                    <h1>Total Charge</h1>
-                    <p><span id="given-name-again">....</span></p>
-                </div>
-            </div>
+        <br>
+        <div class="text-center">
+            <button class="btn btn-info order" type="submit">Order</button>
         </div>
-        <script  src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Order No.</th>
+                    <th scope="col">Pizza Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Toppings</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody id="pizza">
+                <tr>
+                    <th scope="row">1</th>
+                    <td id="size"></td>
+                    <td id="toppings"></td>
+                    <td id="crust"></td>
+                    <td id="total"></td>                        
+                </tr>
+            </tbody>
+        </table>
+        <div class="order">
+            <button type="button"class="btn bg-primary" id="the-order">Order</button>
+        </div>
+            <div class="">
+                <button class="btn btn-info" id="add-pizza" type="button">Add Another</button>
+            </div>
+                
+                
+                <div class="delivery">
+                    <h3 id="total1">The total is: <span></span></h3> 
+                </div>
+                <div class="text">
+                    <h5>Would you like it delivered? For an extra charge of <em>300</em></h5>
+                    <button type="button" class="btn bg-primary" id="yes">Yes</button>
+                    <button class="btn bg-primary" id="no" type="button">No</button>
+                </div>
+                  
+                <div class="location">
+                    <p>Please enter location</p>
+                    <input type="text" placeholder="location" id="locale" required>
+                    <button type="button" id="submit" class="btn bg-primary">Submit</button>
+                </div>
+                <div class="complete-order">
+                    <button class="btn btn-info" id="complete" type="button">Complete</button>
+                </div>
+                <div class="response">
+
+                </div>
+                <div class="add-info">
+               
+                    </div>
+                
+         <div class="text-center">
+                <h4>Thank You! Your order has been received </h4>
+            
+        </div>
+    </div>
+    <script src="Js/jquery-3.4.1.js"></script>
+    <script src="Js/popper.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/scripts.js"></script>
 </body>
+</html>
