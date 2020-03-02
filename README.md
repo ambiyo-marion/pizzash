@@ -6,10 +6,18 @@ Pizzash is pizza delivery app where one can order pizza choose the toppings,crus
 ## Live demo
 
 ## Setup Requirements
+* Open Terminal {Ctrl+Alt+T}
+
+* git clone 
+
+* cd Pizzash
+
+* code . or atom . depending on the text editor of your choise.
+
 
 * Navigate to the folder.
 * Open via text editor.
-## BDD
+## BD
 
 ## Known Bugs
 None
